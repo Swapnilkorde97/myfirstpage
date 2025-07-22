@@ -1,0 +1,156 @@
+<!DOCTYPE html>  <!--  Declares this is an HTML5 document-->    
+<html lang="en">  <!--Starts the HTML document and sets language to English. -->
+<head>                 <!-- -->
+  <title>iTAX Consultancy Clone</title>      <!--Bootstrap CSS: Loads the Bootstrap 5 styles (predefined responsive layout, buttons, forms, etc.).style.css: Your custom stylesheet for extra styling. -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar">  
+    <div class="container">
+      <div class="logo">                                      <!-- Contains logo, links to different services, and a phone number.-->
+        <img src="header-logo.png" alt="iTAX Consultancy" />
+      </div>
+      <ul class="nav-links">                     <!-- ul=Used to create a bulleted list.-->
+        <li><a href="#">GST Compliances</a></li>   <!--li=Each item inside the list is wrapped in an <li> tag. -->
+        <li><a href="#">Income Tax/TDS</a></li>
+        <li><a href="#">Book Keeping</a></li>
+        <li><a href="#">MCA Compliances</a></li>
+        <li><a href="#">Other Financial Matters</a></li>
+       
+      </ul>
+      <div class="call-button">                              
+        <a href="tel:+919818639010">
+          <span class="phone-icon">📞</span> +91 9818639010
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">  <!--Left part: Marketing text (h1, p) and a call-to-action button. -->
+  <div class="hero-container">
+    <div class="hero-left">
+      <h1>
+        Solutions for all<br />
+        <span class="highlight">Financial matters</span> in<br />
+        Delhi NCR
+      </h1>
+      <p>
+        With over 30 years of experience, get expert advice from one of the
+        leading financial consultants in India. Book a free consultation today.
+      </p>
+      <a href="#" class="btn">Explore Services →</a>
+    </div>
+
+    <div class="hero-right">
+      <form class="enquiry-form">
+        <h2>Submit an Enquiry</h2>
+        <input type="text" placeholder="Name*" required />
+        <input type="email" placeholder="Email*" required />
+        <input type="tel" placeholder="Phone*" required />
+        <select required>
+          <option value="">Choose Service*</option>
+          <option value="gst">GST</option>
+          <option value="income-tax">Income Tax</option>
+          <option value="book-keeping">Book Keeping</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">    <!--A grid of service cards.Each card contains a service name and bullet points using ✔️.All styled using services-grid and service-card CSS. -->
+  <div class="services-header">
+    
+    
+  
+   <h4>iTAX Consultancy</h4> 
+   <h2>Services Offered</h2>
+
+
+
+    <div class="underline"></div>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>GST Compliances</h3>
+      <ul>
+        <li>✔️ Data Compilation</li>
+        <li>✔️ Filing of Returns</li>
+        <li>✔️ Representation in GST Department</li>
+        <li>✔️ Regular Reconciliation</li>
+        <li>✔️ Audit</li>
+        <li>✔️ Handling notices/Demands</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h3>Income Tax/TDS</h3>
+      <ul>
+        <li>✔️ Provisional Balance Sheets</li>
+        <li>✔️ Finalising Accounts</li>
+        <li>✔️ TDS Filing</li>
+        <li>✔️ Reconciliation and Audit</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h3>Book Keeping</h3>
+      <ul>
+        <li>✔️ Ledger Reconciliations</li>
+        <li>✔️ Ageing</li>
+        <li>✔️ Debtors</li>
+        <li>✔️ Creditors & Bank Reconciliation</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h3>MCA Compliances</h3>
+      <ul>
+        <li>✔️ All MCA Compliances</li>
+        <li>✔️ Annual Filings & Updates</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <h3>Other Financial Matters</h3>
+      <ul>
+        <li>✔️ All MSME Matters</li>
+        <li>✔️ Company Registration</li>
+        <li>✔️ Credit Facility</li>
+        <li>✔️ Commercial Loans</li>
+        <li>✔️ TDS Deductions Advice</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">            <!-- Left: Company logo, phone number, and email. Right: Quick links to services.Bottom: Copyright.-->
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="header-logo.png" alt="iTAX Logo" class="footer-logo" />
+      <p><i class="fas fa-phone-alt"></i> +91 9818639010</p>
+      <p><i class="fas fa-envelope"></i> info@itaxconsultancy.co.in</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">GST Compliances</a>
+      <a href="#">Income Tax/TDS</a>
+      <a href="#">Book Keeping</a>
+      <a href="#">MCA Compliances</a>
+      <a href="#">Other Financial Matters</a>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+
+  <p class="footer-bottom">Copyright © iTAX Consultancy 2025. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
